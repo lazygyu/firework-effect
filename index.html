@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Firework Simulator</title>
+<style>
+	html, body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #222;
+		color: #efefef;
+	}
+
+	#app {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		align-items: stretch;
+	}
+
+	#app .action-bar {
+		display: flex;
+		align-items: center;
+		justify-content: stretch;
+	}
+
+	#app canvas {
+		max-width: 100vmin;
+		max-height: 100vmin;
+	}
+
+	.fill {
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	.config {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		gap: 1vw;
+	}
+
+	.input-control {
+		display: flex;
+		flex-direction: row;
+		width: 20vw;
+		justify-content: stretch;
+		align-items: center;
+		border: 1px solid #333;
+		height: 3em;
+		box-sizing: border-box;
+		padding: 1em;
+	}
+
+	.input-control label {
+		padding: 0 1em;
+	}
+
+	.input-control input {
+		flex-grow: 1;
+	}
+
+</style>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="module" src="index.js" ></script>
+	</body>
+</html>
